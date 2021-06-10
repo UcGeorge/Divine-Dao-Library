@@ -344,7 +344,7 @@ def add_novel(novel):
         "div", {"class": FIRST_CHAPTER_CLASS}).ul.li.span.a['href']
 
     try:
-        next_chapter_url, chapter_html, chapter_name = get_from_soup(
+        _, chapter_html, chapter_name = get_from_soup(
             first_chapter_link)
     except Exception:
         print('[CHAPTER ERROR] The chapters of this novel are not hosted on DDL')
